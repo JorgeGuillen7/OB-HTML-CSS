@@ -1,0 +1,23 @@
+h1 {
+    font-family: fantasy, sans-serif;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria-img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.galeria-img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease-in-out 0.1s;
+}
