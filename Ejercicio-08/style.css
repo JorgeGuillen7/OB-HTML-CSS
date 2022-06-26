@@ -9,10 +9,12 @@
 
 html {
     font-size: 62.5%;
+    color: #fff;
 }
 
 body {
     font-size: 1.5rem;
+    background-color: #161717;
 }
 
 h1 {
@@ -107,8 +109,7 @@ h1 {
     position: relative;
     top: -13px;
     padding: 0 10px;
-    color: rgb(74, 74, 74);
-    background-color: white;
+    background-color: #161717;
 }
 
 .sign-up__form {
@@ -141,7 +142,7 @@ label {
 input {
     height: 40px;
     padding: 0 10px;
-    background-color: #f3f3f4;
+    background-color: #212121;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -149,12 +150,12 @@ input {
 }
 
 input:hover {
-    background-color: #fff;
+    background-color: #454045;
     box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
 }
 
 input:focus {
-    background-color: #fff;
+    background-color: #454045;
     border: 1px solid rgba(234, 76, 137, 0.4);
     box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
 }
