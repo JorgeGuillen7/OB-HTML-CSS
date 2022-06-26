@@ -1,0 +1,20 @@
+button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+button::after {
+    content: "Pasa por encima";
+}
+
+button:hover {
+    color: #fff;
+    background-color: rgb(8, 121, 43);
+}
+
+button:focus::after {
+    content: "¡Hecho!";
+}
