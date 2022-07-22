@@ -1,0 +1,136 @@
+@mixin btn-base {
+    font-size: 1.4rem;
+    padding: 0.25rem 1.5rem;
+    border-radius: 0.25rem;
+}
+
+@mixin btn-small {
+    font-size: 1.4rem;
+    padding: 0.1 rem 1rem;
+}
+
+$color-main: #0075ff;
+$color-secondary: #0075ff80;
+
+.btn-main {
+    @include btn-base;
+    background-color: $color-main;
+    color: #fff;
+    border: 1px solid $color-main;
+
+    &-s {
+        @extend .btn-main;
+        @include btn-small();
+    }
+
+    &:hover {
+        background-color: #fff;
+        color: $color-main;
+    }
+}
+
+.btn-sec {
+    @include btn-base;
+    background-color: transparent;
+    color: #000;
+    border: none;
+
+    &:hover {
+        color: #888;
+    }
+
+    &-s {
+        @extend .btn-sec;
+        @include btn-small();
+    }
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    li {
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+
+.section {
+    text-align: center;
+    padding: 0 20px;
+    .title {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+    }
+    .subtitle {
+        font-size: 1.8rem;
+        color: #00000040;
+        font-weight: 700;
+    }
+}
+
+.icon-sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2em;
+    box-shadow: 0 0 10px #00000040;
+    i {
+        color: $color-main;
+    }
+}
+
+.feature {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+    min-width: 320px;
+    width: 345px;
+    height: 320px;
+    padding: 0 10px;
+    margin: 20px 0;
+    text-align: center;
+    i {
+        font-size: 6.5rem;
+        color: $color-main;
+        margin-bottom: 20px;
+    }
+    h4 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    a {
+        position: absolute;
+        bottom: 0;
+        color: $color-main;
+        text-decoration: none;
+        padding: 0 10px;
+    }
+}
+
+.icon-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i {
+        font-size: 9rem;
+        color: $color-main;
+    }
+    p {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+}

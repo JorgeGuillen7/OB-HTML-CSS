@@ -1,0 +1,107 @@
+@use "components";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    border-bottom: 1px solid #00000030;
+    padding: 0 25px;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 65px;
+        // padding: 10px;
+        .logo {
+            height: 20px;
+        }
+    }
+}
+
+.sec-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 860px;
+    padding: 0 20px;
+    margin: 80px auto;
+    .info {
+        width: 420px;
+        a {
+            display: block;
+            text-decoration: none;
+            color: components.$color-main;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            &:hover {
+                color: components.$color-secondary;
+            }
+        }
+        h1 {
+            font-size: 6.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 2.7rem;
+        }
+    }
+}
+
+.sec-features {
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 860px;
+        margin: 50px auto;
+        padding: 0 20px;
+        .content--info {
+            .item {
+                display: flex;
+                gap: 15px;
+                align-items: flex-start;
+                max-width: 380px;
+                width: 100%;
+                margin-bottom: 20px;
+                .text {
+                    flex: 1;
+                    text-align: left;
+                    h5 {
+                        font-size: 2rem;
+                        font-weight: 700;
+                    }
+                    p {
+                        font-size: 1.6rem;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .content--img {
+            img {
+                flex: 1;
+                width: 100%;
+                max-width: 520px;
+            }
+        }
+    }
+}
