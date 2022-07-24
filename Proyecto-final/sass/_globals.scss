@@ -65,15 +65,16 @@ header {
 }
 
 .sec-features {
+    border-bottom: 1px solid #00000030;
+    margin-bottom: 60px;
     .content {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
         width: 100%;
-        max-width: 860px;
-        margin: 50px auto;
-        padding: 0 20px;
+        max-width: 820px;
+        margin: 50px auto 10px;
         .content--info {
             .item {
                 display: flex;
@@ -102,6 +103,97 @@ header {
                 width: 100%;
                 max-width: 520px;
             }
+        }
+    }
+}
+
+.sec-benefits {
+    .features-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin: 90px 0;
+    }
+}
+
+.sec-kpis {
+    width: 100%;
+    min-height: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: components.$color-main;
+    color: #fff;
+    text-align: center;
+    h4 {
+        font-size: 5.6rem;
+        font-weight: 700;
+    }
+    p {
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+}
+
+.sec-onboarding {
+    margin: 80px 0 120px;
+    .steps {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-top: 90px;
+        .separator {
+            width: 100%;
+            max-width: 140px;
+            height: 1px;
+            background-color: #000;
+        }
+    }
+}
+
+.sec-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 480px;
+    background-color: #f4f7fe;
+    .sec-cta--info {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        max-width: 520px;
+        margin-left: 130px;
+        h3 {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        p {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #00000040;
+        }
+        button {
+            align-self: flex-start;
+        }
+    }
+    img {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .sec-home {
+        justify-content: center;
+    }
+    .sec-cta {
+        justify-content: center;
+        padding: 0 20px;
+        .sec-cta--info {
+            margin-left: 0;
         }
     }
 }

@@ -101,7 +101,6 @@ $color-secondary: #0075ff80;
     width: 345px;
     height: 320px;
     padding: 0 10px;
-    margin: 20px 0;
     text-align: center;
     i {
         font-size: 6.5rem;
@@ -111,6 +110,7 @@ $color-secondary: #0075ff80;
     h4 {
         font-size: 2.5rem;
         margin-bottom: 15px;
+        font-weight: 700;
     }
     a {
         position: absolute;
@@ -130,7 +130,7 @@ $color-secondary: #0075ff80;
         color: $color-main;
     }
     p {
-        font-size: 1.6rem;
+        font-size: 2rem;
         font-weight: 700;
     }
 }
